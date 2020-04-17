@@ -16,3 +16,6 @@
 // });
 
 $router->get("posts", "PostController@index");
+$router->post("posts/insert", "PostController@store");
+$router->patch("posts/update", "PostController@update");
+$router->delete("posts/{id}", "PostController@destroy");
